@@ -21,11 +21,11 @@ function Coments() {
     );
   }
   const addUser = () => {
-    const newId = coment.length + 1; // To'g'ri massiv nomi ishlatiladi
-    const newTodo = { id: newId, ...newCment }; // Yangi obyekt yaratiladi
-    setComent([...coment, newTodo]); // Massiv yangilanadi
-    setSHowMadaComent(false); // Modalni yopish
-    setNewCment({ name: "", email: "", body: "" }); // Formani tozalash
+    const newId = coment.length + 1; 
+    const newTodo = { id: newId, ...newCment }; 
+    setComent([...coment, newTodo]);
+    setSHowMadaComent(false);
+    setNewCment({ name: "", email: "", body: "" }); 
   };
   
   return (
@@ -114,7 +114,7 @@ function Coments() {
                 Bekor qilish
               </button>
               <button
-                onClick={addUser} // Yangi foydalanuvchini qo'shish
+                onClick={addUser} 
                 className="bg-green-700 text-white px-4 py-2 rounded"
               >
                 Qo'shish

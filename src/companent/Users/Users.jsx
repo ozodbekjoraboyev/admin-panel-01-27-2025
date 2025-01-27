@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function Users() {
   const [users, setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [newUser, setNewUser] = useState({ name: "", email: "", city: "" }); // Yangi foydalanuvchi ma'lumotlari
+  const [newUser, setNewUser] = useState({ name: "", email: "", city: "" }); 
 
   useEffect(() => {
     axios
@@ -122,7 +122,7 @@ function Users() {
                 Bekor qilish
               </button>
               <button
-                onClick={handleAddUser} // Yangi foydalanuvchini qo'shish
+                onClick={handleAddUser} 
                 className="bg-green-700 text-white px-4 py-2 rounded"
               >
                 Qo'shish

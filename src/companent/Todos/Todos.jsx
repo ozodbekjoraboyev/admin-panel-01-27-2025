@@ -21,14 +21,13 @@ function Todos() {
     );
   }
   const addUser = () => {
-    const newId = todos.length + 1; // To'g'ri massiv nomi ishlatiladi
-    const newTodo = { id: newId, ...newTodos }; // Yangi obyekt yaratiladi
-    setTodos([...todos, newTodo]); // Massiv yangilanadi
-    setSHowMadal(false); // Modalni yopish
-    setNewTodos({ name: "", email: "", body: "" }); // Formani tozalash
+    const newId = todos.length + 1; 
+    const newTodo = { id: newId, ...newTodos };
+    setTodos([...todos, newTodo]);
+    setSHowMadal(false);
+    setNewTodos({ name: "", email: "", body: "" }); 
   };
-  
-  
+
   return (
     <div className="absolute left-80 top-20 m-auto text-center">
       <button
@@ -112,14 +111,14 @@ function Todos() {
               />
             </div>
             <div className="flex justify-end">
-            <button
-                onClick={() => setSHowMadal(false)} 
+              <button
+                onClick={() => setSHowMadal(false)}
                 className="bg-gray-500 text-white px-4 py-2 rounded mr-2"
               >
                 Bekor qilish
               </button>
               <button
-                onClick={addUser} // Yangi foydalanuvchini qo'shish
+                onClick={addUser} 
                 className="bg-green-700 text-white px-4 py-2 rounded"
               >
                 Qo'shish
